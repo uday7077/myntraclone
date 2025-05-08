@@ -10,14 +10,14 @@ const ProductCard = ({ product }) => {
     <div className="card h-100">
       <Link to={`/product/${product.id}`}>
         <img
-          src={product.image}
+          src={product.thumbnail}
           className="card-img-top p-3"
           alt={product.title}
           style={{ height: "200px", objectFit: "contain" }}
         />
       </Link>
       <div className="card-body">
-        <h6 className="card-title">{product.title.slice(0, 40)}...</h6>
+        <h6 className="card-title">{product.title}</h6>
         <p className="card-text">${product.price}</p>
         <button
           className="btn btn-primary w-100"
